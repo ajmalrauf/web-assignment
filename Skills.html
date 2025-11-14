@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajmal Rauf — Skills</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <header class="site-header">
+    <div class="brand">
+      <div class="name">Ajmal Rauf</div>
+      <div class="sub">Skills</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Technical Skills</h1>
+      <p class="lead muted">Below are my key skills with proficiency. Each bar animates when the page loads.</p>
+
+      <div class="skills-list">
+        <!-- each .skill has data-percent used by JS to animate -->
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML &amp; CSS</span><span class="percent">90%</span>
+          </div>
+          <div class="progress" data-percent="90">
+            <div class="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>JavaScript (ES6+)</span><span class="percent">80%</span>
+          </div>
+          <div class="progress" data-percent="80">
+            <div class="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>React</span><span class="percent">70%</span>
+          </div>
+          <div class="progress" data-percent="70">
+            <div class="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Python &amp; ML Basics</span><span class="percent">65%</span>
+          </div>
+          <div class="progress" data-percent="65">
+            <div class="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Notes</h2>
+      <p class="muted">Proficiency is self-assessed; progress bars are animated with JavaScript to satisfy the assignment's dynamic features requirement.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>©️ 2025 Ajmal Rauf</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

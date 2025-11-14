@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajmal Rauf — Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="brand">
+      <div class="name">Ajmal Rauf</div>
+      <div class="sub">Projects</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>My Projects</h1>
+      <p class="muted lead">I present two required projects — final year project first.</p>
+
+      <div class="project-filter">
+        <label>Filter by tech:</label>
+        <select id="techFilter">
+          <option value="all">All</option>
+          <option value="web">Web</option>
+          <option value="ml">ML</option>
+          <option value="mobile">Mobile</option>
+        </select>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid">
+        <!-- Project 1: Final Year Project -->
+        <article class="project card" data-tech="web">
+          <h3>Smart Attendance System (Final Year Project)</h3>
+          <p class="muted">An attendance system using face recognition and web portal for reports.</p>
+          <ul class="meta-list">
+            <li><strong>Technologies:</strong> Python, OpenCV, Flask, HTML/CSS, JS</li>
+            <li><strong>Problem:</strong> Manual attendance is time-consuming and error-prone.</li>
+            <li><strong>Unique Proposition:</strong> Real-time face detection with web dashboard.</li>
+            <li><strong>Competitors:</strong> Traditional biometric scanners, manual registers.</li>
+            <li><strong>Demo / Repo:</strong> <a href="#" target="_blank">GitHub Repo</a></li>
+          </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card" data-tech="web">
+          <h3>Portfolio Website</h3>
+          <p class="muted">A responsive portfolio to showcase projects and resume.</p>
+          <ul class="meta-list">
+            <li><strong>Technologies:</strong> HTML, CSS, Vanilla JS</li>
+            <li><strong>Problem:</strong> Need for personal branding and project showcase.</li>
+            <li><strong>Unique Proposition:</strong> Lightweight, fast, and accessible design.</li>
+            <li><strong>Competitors:</strong> Templates and basic resume pages.</li>
+            <li><strong>Demo / Repo:</strong> <a href="#" target="_blank">Live Demo</a></li>
+          </ul>
+        </article>
+
+        <!-- Example ML project -->
+        <article class="project card" data-tech="ml">
+          <h3>Handwritten Digit Classifier</h3>
+          <p class="muted">A simple CNN trained on MNIST to demonstrate ML basics.</p>
+          <ul class="meta-list">
+            <li><strong>Technologies:</strong> Python, TensorFlow</li>
+            <li><strong>Problem:</strong> Educational demo for ML pipeline.</li>
+            <li><strong>Unique Proposition:</strong> Lightweight and well-documented.</li>
+            <li><strong>Competitors:</strong> Many online tutorials — this focuses on clarity.</li>
+            <li><strong>Demo / Repo:</strong> <a href="#" target="_blank">GitHub Repo</a></li>
+          </ul>
+        </article>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>©️ 2025 Ajmal Rauf</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
