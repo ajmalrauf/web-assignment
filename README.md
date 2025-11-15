@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajmal Rauf — Personal Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="brand">
+      <div class="name">Ajmal Rauf</div>
+      <div class="sub">Student — The University of Lahore</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Theme switcher is required only on Home page -->
+      <button id="themeToggle" class="btn small">Switch Theme</button>
+    </div>
+  </header>
+
+  <main class="container home-hero">
+    <section class="intro card">
+      <div class="left">
+        <img src="Ajmal Cheema.jpg" alt="Ajmal Rauf" class="avatar">
+      </div>
+      <div class="right">
+        <h1>Hello — I'm Ajmal Rauf</h1>
+        <p class="lead">
+          A Computer Science student at The University of Lahore focused on web development. I build responsive interfaces, and experiment with modern JavaScript.
+        </p>
+
+        <div class="cta">
+          <a href="projects.html" class="btn primary">View Projects</a>
+          <a href="skills.html" class="btn">My Skills</a>
+        </div>
+
+        <div class="meta small">
+          <span>Final Year Project: <strong>Smart Attendance System</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features grid-3">
+      <div class="feature card hover-float">
+        <h3>Interactive</h3>
+        <p>JavaScript driven components with smooth animations and events.</p>
+      </div>
+      <div class="feature card hover-float">
+        <h3>Responsive</h3>
+        <p>Designed mobile-first; works on phones, tablets and desktops.</p>
+      </div>
+      <div class="feature card hover-float">
+        <h3>Accessible</h3>
+        <p>Readable fonts, sufficient contrast, keyboard navigable forms.</p>
+      </div>
+    </section>
+
+    <section class="contact card" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        <div class="form-row space-between">
+          <div class="small meta" id="formNote"></div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="clock-timer card small" aria-live="polite">
+      <div id="digitalClock">Clock: --:--:--</div>
+      <div id="sessionTimer">Session: 00:00</div>
+      <div class="muted">Timer runs while page is visible (starts when you open this page).</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Ajmal Rauf — The University of Lahore</div>
+    <div class="muted">Prepared for Assignment-2</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
